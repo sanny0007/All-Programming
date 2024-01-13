@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3::after{
+            content: '.pdf';
+            color: blue;
+            font-size: 15px;
+            background-color: yellow;
+        }
+       h3::before{
+        content: 'start:';
+        font-size: 15px;
+        color: red;
+        background-color: yellow;
+       }
+       p::first-letter{
+        font-size: 2em;
+       }
+       p::first-line{
+        background-color: aqua;
+       }
+       ::selection{
+        background-color: pink;
+       }
+       input::placeholder{
+        color: blue;
+       }
+    </style>
+</head>
+<body>
+    <h3>Heading -1</h3>
+    <h3>Heading -2</h3>
+    <h3>Heading -3</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo cupiditate qui rem laboriosam recusandae, officiis provident necessitatibus quis adipisci sequi.</p>
+    <p>Iste quo sapiente assumenda ab molestias placeat quaerat eius neque sequi dolor, aliquam quia, magni esse atque quibusdam illo veritatis?</p>
+    <p>At molestias dolorum aspernatur officiis impedit dolore odit voluptatum maiores ipsam reprehenderit, unde, deleniti soluta assumenda tempore corporis illum eum?</p>
+</body>
+</html>
