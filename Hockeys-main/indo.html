@@ -1,0 +1,203 @@
+
+<!-- tailwind and daisy ui -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- manrope google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<!-- tailwind custom color -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'gradient-start': '#FF8938',
+          'gradient-end': '#F00',
+        }
+      }
+    }
+  }
+</script>
+
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+<style>
+  .font-manrope {
+    font-family: 'Manrope', sans-serif;
+  }
+</style>
+</head>
+
+<body class="font-poppins">
+    <header class="md:container md:mx-auto">
+  
+      <!-- nav styles-->
+      <nav class="my-14">
+        <div class="navbar bg-base-100">
+          <div class="flex-1">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0"
+                class="menu text-base menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-2xl lg:text-4xl">Baike Shop</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu text-base menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li>
+              <li><a>Shop</a></li>
+              </li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <a class="btn bg-bike-primary text-white">login</a>
+          </div>
+        </div>
+      </nav>
+      <!-- nav style end -->
+  
+  
+      <!-- slider or carousel -->
+  
+      <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
+  
+        <!-- slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row gap-12 lg-4 lg:p-24">
+            <div class=" space-y-7 flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h2>
+              <p>Amet minim mollit non deserunt ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <button class="text-white py-4 px-8 bg-bike-primary">Purchase</button>
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike3.png" class="w-[440px]" />
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+
+
+
+
+        <div>
+          <img src="images/banner.png" class=" h-96 w-auto" />
+          <!-- ratings badge -->
+
+          <div class="-mt-16 flex items-center gap-4 drop-shadow-xl bg-white p-5 w-64">
+            <i class="fa-solid fa-star text-5xl text-amber-400"></i>
+            <div>
+              <h3 class="text-3xl font-extrabold">5.00</h3>
+              <p class="text-base font-semibold text-[#777]">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- new -->
+        <main class="container mx-auto">
+          <!-- featured section -->
+          <section class="text-center my-48">
+            <h2 class="text-5xl font-extrabold mb-5 "><span class="text-amber-400">Our</span> Featured <span class="text-purple-600">Products</span></h2>
+            <p class="text-[#777] mb-14 lg:max-w-4xl mx-auto">There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form,<br> by injected humour, or randomised words which don't
+              look even slightly believable. </p>
+             
+<!-- FAQ -->
+
+<section class="my-32">
+  <h3 class="text-6xl font-semibold text-center ">Frequently Asked <span class="text-orange-400">Questions</span> </h3>
+  <div class="hero ">
+    <div class="hero-content flex-col lg:gap-24 lg:flex-row">
+      <img src="images/others/faq.png" class="w-3/4 lg:max-w-sm rounded-lg shadow-2xl" />
+      <div>
+        <!-- frist question -->
+        <div class="collapse collapse-arrow ">
+          <input type="radio" name="my-accordion-2" checked="checked" /> 
+          <div class="collapse-title text-xl font-medium">
+            What are the most important things I should
+            know about riding a bike?
+          </div>
+          <div class="collapse-content"> 
+            <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow ">
+          <input type="radio" name="my-accordion-2" /> 
+          <div class="collapse-title text-xl font-medium">
+            How can I tell if my helmet is old and I need a 
+            new one?
+          </div>
+          <div class="collapse-content"> 
+            <p>Safety First! Always obey the rules of the road. Obey all traffic signals, </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow ">
+          <input type="radio" name="my-accordion-2" /> 
+          <div class="collapse-title text-xl font-medium">
+            My bike has been in storage is it safe to ride?
+          </div>
+          <div class="collapse-content"> 
+            <p>“driving” your bike—not just “riding” your bike.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow ">
+          <input type="radio" name="my-accordion-2" /> 
+          <div class="collapse-title text-xl font-medium">
+            What rules should I follow when riding my bike?
+          </div>
+          <div class="collapse-content"> 
+            <p>Fuck you sadia </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<!-- toto-->
+<div class="collapse collapse-plus bg-base-200">
+  <input type="radio" name="my-accordion-3" checked="checked" /> 
+  <div class="collapse-title text-xl font-medium">
+    Click to open this one and close others
+  </div>
+  <div class="collapse-content"> 
+    <p>hello</p>
+  </div>
+</div>
+<div class="collapse collapse-plus bg-base-200">
+  <input type="radio" name="my-accordion-3" /> 
+  <div class="collapse-title text-xl font-medium">
+    Click to open this one and close others
+  </div>
+  <div class="collapse-content"> 
+    <p>hello</p>
+  </div>
+</div>
+<div class="collapse collapse-plus bg-base-200">
+  <input type="radio" name="my-accordion-3" /> 
+  <div class="collapse-title text-xl font-medium">
+    Click to open this one and close others
+  </div>
+  <div class="collapse-content"> 
+    <p>hello</p>
+  </div>
+</div>
